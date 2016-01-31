@@ -55,7 +55,7 @@ static inline int get_bit(unsigned char *arr, unsigned long bit_num)
 - (NSImage *)imageWithAlphaComponent:(float)alpha {
   // BOOL wasFlipped = [self isFlipped];
   
-  NSImage *fadedImage = [[[NSImage alloc] initWithData:[self TIFFRepresentation]]autorelease];
+  NSImage *fadedImage = [[NSImage alloc] initWithData:[self TIFFRepresentation]];
   [fadedImage setCacheMode:NSImageCacheNever];
   
   NSEnumerator *repEnum = [[fadedImage representations] objectEnumerator];
@@ -181,7 +181,7 @@ static inline int get_bit(unsigned char *arr, unsigned long bit_num)
     
     CGImageRef smallImage = CGBitmapContextCreateImage(smallContext);
     if (smallImage) {
-      NSBitmapImageRep *cgRep = [[[NSBitmapImageRep alloc] initWithCGImage:smallImage] autorelease];
+      NSBitmapImageRep *cgRep = [[NSBitmapImageRep alloc] initWithCGImage:smallImage];
       [self addRepresentation:cgRep];      
     }
     CGImageRelease(smallImage);
@@ -253,7 +253,7 @@ static inline int get_bit(unsigned char *arr, unsigned long bit_num)
 }
 
 - (NSImage *)duplicateOfSize:(NSSize)newSize {
-	NSImage *dup = [[self copy] autorelease];
+	NSImage *dup = [self copy];
 	[dup shrinkToSize:newSize];
 	[dup setFlipped:NO];
 	return dup;
@@ -303,7 +303,6 @@ static inline int get_bit(unsigned char *arr, unsigned long bit_num)
 			
     }
   }
-  [bitmap release];
   //flip y!!
 	//QSLog(@"%d, %d, %d, %d", minX, minY, maxX, maxY);
   return NSMakeRect(minX, [bitmap pixelsHigh] -maxY-1, maxX-minX+1, maxY-minY+1);
@@ -320,7 +319,7 @@ static inline int get_bit(unsigned char *arr, unsigned long bit_num)
   }
   [tempImage unlockFocus];
   //QSLog(@"%@", tempImage);
-  return [[[NSImage alloc] initWithData:[tempImage TIFFRepresentation]]autorelease]; //*** UGH! why do I have to do this to commit the changes?;
+  return [[NSImage alloc] initWithData:[tempImage TIFFRepresentation]]; //*** UGH! why do I have to do this to commit the changes?;
 }
 @end
 

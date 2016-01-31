@@ -37,13 +37,13 @@
   NSPredicate *searchPredicate;
 }
 
-@property(retain) NSURLConnection *fetchConnection;
-@property(retain) NSMutableData   *fetchData;
-@property(retain) NSArray *entries;
-@property(retain) NSArray *categories;
-@property(retain) NSMutableDictionary *bundles;
-@property(retain) NSDictionary *currentEntry;
-@property(retain) NSPredicate *searchPredicate;
+@property(strong) NSURLConnection *fetchConnection;
+@property(strong) NSMutableData   *fetchData;
+@property(strong) NSArray *entries;
+@property(strong) NSArray *categories;
+@property(strong) NSMutableDictionary *bundles;
+@property(strong) NSDictionary *currentEntry;
+@property(strong) NSPredicate *searchPredicate;
 @property(assign) BOOL showInfo;
 
 - (IBAction)reloadInfo:(id)sender;
