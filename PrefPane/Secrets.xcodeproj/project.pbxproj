@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CC3D38C1C5EA0760098BB5D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC3D38B1C5EA0760098BB5D /* Media.xcassets */; };
 		7F1972B40D74201D00F580DC /* NSGeometry_BLTRExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1972AC0D74201D00F580DC /* NSGeometry_BLTRExtensions.h */; };
 		7F1972B50D74201D00F580DC /* NSGeometry_BLTRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1972AD0D74201D00F580DC /* NSGeometry_BLTRExtensions.m */; };
 		7F1972B60D74201D00F580DC /* NSImage_BLTRExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1972AE0D74201D00F580DC /* NSImage_BLTRExtensions.h */; };
@@ -26,7 +27,6 @@
 		8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
 		9946DA98108BA9A2007D41CD /* Secrets.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4919A0D7A948B00DD7588 /* Secrets.icns */; };
-		9946DA99108BA9A2007D41CD /* Secrets-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAA8C690D753E1C00F81F30 /* Secrets-small.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +34,7 @@
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCFA20370C41700C91783 /* Secrets_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secrets_Prefix.pch; sourceTree = "<group>"; };
+		3CC3D38B1C5EA0760098BB5D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		7F1972AC0D74201D00F580DC /* NSGeometry_BLTRExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSGeometry_BLTRExtensions.h; sourceTree = "<group>"; };
 		7F1972AD0D74201D00F580DC /* NSGeometry_BLTRExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSGeometry_BLTRExtensions.m; sourceTree = "<group>"; };
 		7F1972AE0D74201D00F580DC /* NSImage_BLTRExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSImage_BLTRExtensions.h; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		7F1C40B40E1C6F4800AA2052 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		7F704BA20D6EAD5C00879138 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SecretsPref.xib; sourceTree = "<group>"; };
 		7FA39DFC106745A8001ED884 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
-		7FAA8C690D753E1C00F81F30 /* Secrets-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Secrets-small.png"; sourceTree = "<group>"; };
 		7FD490F10D7A865000DD7588 /* Application.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Application.png; sourceTree = "<group>"; };
 		7FD4919A0D7A948B00DD7588 /* Secrets.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Secrets.icns; sourceTree = "<group>"; };
 		7FEB02530D7D22D700F4D367 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
@@ -113,9 +113,9 @@
 				7FD490F10D7A865000DD7588 /* Application.png */,
 				8D202CF70486D31800D8A456 /* Info.plist */,
 				99D3C498106719F7001D475D /* TODO.txt */,
-				7FAA8C690D753E1C00F81F30 /* Secrets-small.png */,
 				7FD4919A0D7A948B00DD7588 /* Secrets.icns */,
 				7F704BA10D6EAD5C00879138 /* SecretsPref.xib */,
+				3CC3D38B1C5EA0760098BB5D /* Media.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 				7FD490F20D7A865000DD7588 /* Application.png in Resources */,
 				7F1C40B50E1C6F4800AA2052 /* Secrets.plist in Resources */,
 				9946DA98108BA9A2007D41CD /* Secrets.icns in Resources */,
-				9946DA99108BA9A2007D41CD /* Secrets-small.png in Resources */,
+				3CC3D38C1C5EA0760098BB5D /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
