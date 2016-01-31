@@ -772,7 +772,7 @@
     value = dictValue;
   }
   
-  CFPreferencesSetValue((CFStringRef) key, value, (CFStringRef)bundle, user, host);
+  CFPreferencesSetValue((CFStringRef) key, CFBridgingRetain(value), (CFStringRef)bundle, user, host);
   CFPreferencesSynchronize((CFStringRef) bundle, user, host);  
   
   if (value)
