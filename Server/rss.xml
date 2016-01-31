@@ -1,0 +1,28 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns="http://purl.org/rss/1.0/">
+  <channel rdf:about="http://secrets.blacktree.com/preferences/list">
+    <title>Secrets - {{title}}</title>
+    <link>http://secrets.blacktree.com/preferences/list</link>
+    <description>Secrets - {{title}}</description>
+    <dc:language>en</dc:language>
+    <dc:creator></dc:creator>
+    <dc:date>2008-06-17T13:58:51Z</dc:date>
+    <items>
+      <rdf:Seq>{% for secret in secrets %}
+        <rdf:li rdf:resource="http://secrets.blacktree.com/preferences/edit/606"/>
+      {% endfor %}</rdf:Seq>
+    </items>
+  </channel>
+  {% for secret in secrets %}
+  <item rdf:about="http://secrets.blacktree.com/preferences/edit/606">
+    <title>{{secret.display_app|escape}}: {{secret.title}}</title>
+    <link>http://secrets.blacktree.com/edit?id={{secret.key.id}}</link>
+    <description><![CDATA[
+		<table><tr><td><img class="icon" width=32 height=32 style="margin:8px;" src="{{secret.display_icon}}"></td><td style="font-size:small;">
+		<b>{{secret.title}}</b>{% if secret.description %}<br><span style="color:#999">{{secret.description}}</span>{% endif %}<br>
+		<span style="color:#ccc">{{ secret.default_string|escape}}</span>
+		</td></tr></table>]]></description>
+    <dc:subject>subject</dc:subject>
+    <dc:date>{{secret.updated_at|date:"Y-m-d\TH:i:s\Z"}}</dc:date>
+  </item>
+  {% endfor %}
+</rdf:RDF>

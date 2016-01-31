@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/stylesheets/secrets.css">
+	<script type="text/javascript" src="/javascript/jquery.js"></script>
+	<link rel="alternate" type="application/rss+xml" title="New Secrets" href="rss/new">
+	<link rel="alternate" type="application/rss+xml" title="All Updates" href="rss/updated">
+	<title>Secrets{% if title %}: {{title}}{% endif %}</title>
+	
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-583671-20");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+</head>
+<body>
+	
+		<form action="">
+	<p align="center"><a href="http://secrets.blacktree.com"><img border="0" src="/images/Secrets.png"></a><br>
+		A database of hidden settings for Mac OS X<br><br>
+		<a href="edit">Add a secret</a> - 
+		<a href="http://code.google.com/p/blacktree-secrets/wiki/Help">Help</a> - 
+		<a href="http://blacktree-secrets.googlecode.com/">Source Code</a> - 
+		<a href="http://groups.google.com/group/blacktree-secrets">Discussion Group</a> - 
+		<a href="http://code.google.com/p/blacktree-secrets/issues/list">Issue Tracker</a> - 
+		<a href="http://blacktree-secrets.googlecode.com/files/Secrets_1.0.6.zip">PrefPane 1.0.6</a> (10.5+)
+		<br>
+		<a href="?show=recent">Recent</a> - 
+		<a href="?show=deleted">Deleted</a>
+		<br>
+		<input type="search" name="search" value="{% if search_string %}{{search_string}}{% endif %}" placeholder="Search" style="width:300;">
+		
+		
+		{% if warning %}
+			<div align="center" id="errorExplanation">{{ warning }}</div>
+		{% endif %}
+		
+	</p>
+</form>
+
+	<hr width="600">
+
+	{% if message %}
+		<div align="center" id="message">{{ message }}</div>
+	{% endif %}
+	
+	<table width="600" cellpadding="5" align="center" border="0">{% for secret in secrets %}
+		<tr {% if secret.hidden or secret.is_broken or secret.deleted %} style="opacity: 0.3;"{% endif %}>
+			<td align="right" valign="top">
+				<a href="?showapp={{secret.bundle}}">
+				{{ secret.display_app|escape }}
+				{% if secret.minversion %}<!-- {#and preference.minversion.length#} -->({{ secret.minversion }}){% endif %}
+				</a>
+			</td>
+			<td width="32">
+				<img class="icon" src="{{secret.display_icon}}">
+			</td>
+			<td valign="top">
+				<a href="edit?id={{secret.key.id}}" style="{% if secret.hidden or secret.is_broken %}color: gray;{% endif %}">{{secret.title}}</a>
+				<br>
+				<span class="detail">{{ secret.default_string }}</span>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+	{% if not showall %}
+	<br>
+	<center>
+		<hr width="600">
+		<a href="?show=all">Show full list</a>
+	</center>
+	{% else %}
+	
+	<center>
+		<hr width="600">
+		
+		{% if prev_page %}<a href="?show=all&page={{prev_page}}">Back</a> - {% endif %}
+		{% if next_page %}<a href="?show=all&page={{next_page}}">More</a>{% endif %}
+	</center>	
+	{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% for secret in secrets %}
+    <dict>
+      <key>id</key>
+      <integer>{{secret.key.id}}</integer>
+      <key>bundle</key>
+      <string>{{secret.bundle|escape}}</string>
+      {% if secret.display_bundle %}<key>display_bundle</key><string>{{secret.display_bundle|escape}}</string>{% endif %}
+      {% if secret.keypath %}<key>keypath</key><string>{{secret.keypath|escape}}</string>{% endif %}
+      {% if secret.description %}<key>description</key><string>{{secret.description|escape}}</string>{% endif %}
+      {% if secret.datatype %}<key>datatype</key><string>{{secret.datatype|escape}}</string>{% endif %}
+      {% if secret.widget %}<key>widget</key><string>{{secret.widget|escape}}</string>{% endif %}
+      {% if secret.title %}<key>title</key><string>{{secret.title|escape}}</string>{% endif %}
+      {% if secret.values %}<key>values</key><string>{{secret.values|escape}}</string>{% endif %}
+      {% if secret.defaultvalue %}<key>defaultvalue</key><string>{{secret.defaultvalue|escape}}</string>{% endif %}
+      {% if secret.minversion %}<key>minversion</key><string>{{secret.minversion|escape}}</string>{% endif %}
+      {% if secret.maxversion %}<key>maxversion</key><string>{{secret.maxversion|escape}}</string>{% endif %}
+      {% if secret.minosversion %}<key>minosversion</key><string>{{secret.minosversion|escape}}</string>{% endif %}
+      {% if secret.maxosversion %}<key>maxosversion</key><string>{{secret.maxosversion|escape}}</string>{% endif %}
+      {% if secret.units %}<key>units</key><string>{{secret.units|escape}}</string>{% endif %}
+      {% if secret.group %}<key>group</key><string>{{secret.group|escape}}</string>{% endif %}
+      {% if secret.placeholder %}<key>placeholder</key><string>{{secret.placeholder|escape}}</string>{% endif %}
+      {% if secret.created_at %}<key>created</key><date>{{secret.created_at|date:"Y-m-d\TH:i:s\Z" }}</date>{% endif %}
+      {% if secret.updated_at %}<key>updated</key><date>{{secret.updated_at|date:"Y-m-d\TH:i:s\Z"}}</date>{% endif %}
+      {% if secret.hidden %}<key>hidden</key><true/>{% endif %}
+      {% if secret.is_keypath %}<key>is_keypath</key><true/>{% endif %}
+      {% if secret.verified %}<key>verified</key><true/>{% endif %}
+      {% if secret.top_secret %}<key>top_secret</key><true/>{% endif %}
+      {% if secret.dangerous %}<key>dangerous</key><true/>{% endif %}
+      {% if secret.current_host_only %}<key>current_host_only</key><true/>{% endif %}
+      {% if secret.set_for_all_users %}<key>set_for_all_users</key><true/>{% endif %}
+    </dict>
+{% endfor %}

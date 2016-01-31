@@ -1,0 +1,11 @@
+Secrets TODO List
+
+Pref Pane:
+ * Enable max/min OS version and max/min App version
+
+Website:
+* Better Entry Form
+
+* Ability to download termCommands
+
+* Add App table, Normalize DB somewhat

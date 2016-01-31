@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Secrets - Blacktree</title>
+	<link type="text/css" rel="stylesheet" href="/stylesheets/secrets.css">
+	<script type="text/javascript" src="/javascript/jquery.js"></script>
+	<link rel="alternate" type="application/rss+xml" title="Updated Secrets" href="rss/updated">
+	<link rel="alternate" type="application/rss+xml" title="New Secrets" href="rss/new">
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-583671-20");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+</head>
+<body>
+<p align="center"><a href="/"><img border="0" src="/images/Secrets.png"></a><br>
+
+<span class="detail">
+	
+	
+{% if id %}
+Secret #{{id}}
+{% else %}
+
+{% if loggedin %}Tell us a Secret...{% else %}Sign in to add a secret{% endif %}
+
+<br>
+This secret will be editable by anyone for 3 days.<br>
+{% endif %}
+
+<br><a href="http://code.google.com/p/blacktree-secrets/wiki/EditorTips" target="_new">Learn how to fill out these fields</a>
+
+- <a href="{{url}}">{% if loggedin %}Sign out{% else %}Sign in{% endif %}</a>
+</span><br>
+</p>
+<div class="byline">
+	{% if author %}
+Created by {{author}} on {{secret.created_at|date:"M d"}}<br>
+{% endif%}
+
+{% if editor %}
+Edited by {{editor}} on {{secret.updated_at|date:"M d"}}<br>
+{% endif%}
+</div>
+{% if dups %}
+<center>
+<div class="warning" style="width:400px; background-color:#ffa;">
+This secret is a duplicate of:<br>
+{% for secret in dups %}
+			{{ secret.display_app|escape }}
+			{% if secret.minversion %}<!-- {#and preference.minversion.length#} -->({{ secret.minversion }}){% endif %}
+			<img class="icon" style="width:16; height:16"src="/images/bundleicons/{{secret.display_icon}}.png">
+			<a href="edit?id={{secret.key.id}}" style="{% if secret.hidden or secret.is_broken %}color: gray;{% endif %}">{{secret.title}}</a> - {{ secret.bundle }} - {{ secret.keypath }}<br>
+			
+	{% endfor %}
+	</div>
+	</center>
+{% endif %}
+
+
+<form id="editform" {% if iseditable %} method="POST" action="/edit" {% else %} action="/submit" {% endif %} >
+<center>
+<table>
+	{{form}}
+</table>
+<p>
+<br>
+{% if iseditable %}
+<input type="hidden" name="_id" value="{{id}}">
+<input type="submit">
+{% else %}
+<script language="javascript">
+$("input").attr("disabled", "disabled");
+$("textarea").attr("disabled", "disabled");
+$("select").attr("disabled", "disabled");
+</script>
+{% endif %}
+</form>
+
+
+{% if isadmin %}
+<form id="editform" method="POST" action="/delete" >
+	<input type="hidden" name="_id" value="{{id}}">
+	<input type="submit" value="Delete">
+</form>
+{% endif %}
+</center>
+<!-- by {{ secret.author }}. edit {{ secret.editor }}- {% if isowned %} owned {% endif %} {% if isadmin %} admin {% endif %} -->
+
+</body>
+</html>

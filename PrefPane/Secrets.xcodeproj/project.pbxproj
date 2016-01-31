@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F1972B40D74201D00F580DC /* NSGeometry_BLTRExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1972AC0D74201D00F580DC /* NSGeometry_BLTRExtensions.h */; };
+		7F1972B50D74201D00F580DC /* NSGeometry_BLTRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1972AD0D74201D00F580DC /* NSGeometry_BLTRExtensions.m */; };
+		7F1972B60D74201D00F580DC /* NSImage_BLTRExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1972AE0D74201D00F580DC /* NSImage_BLTRExtensions.h */; };
+		7F1972B70D74201D00F580DC /* NSImage_BLTRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1972AF0D74201D00F580DC /* NSImage_BLTRExtensions.m */; };
+		7F1972B80D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1972B00D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.h */; };
+		7F1972B90D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1972B10D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.m */; };
+		7F1C40B50E1C6F4800AA2052 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C40B40E1C6F4800AA2052 /* Secrets.plist */; };
+		7F704BA30D6EAD5C00879138 /* SecretsPref.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F704BA10D6EAD5C00879138 /* SecretsPref.xib */; };
+		7FA39DFD106745A8001ED884 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA39DFC106745A8001ED884 /* libobjc.dylib */; };
+		7FD490F20D7A865000DD7588 /* Application.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD490F10D7A865000DD7588 /* Application.png */; };
+		7FEB02540D7D22D700F4D367 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEB02530D7D22D700F4D367 /* Carbon.framework */; };
+		7FFC7F650D7E512B00499B8E /* Informer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC7F450D7E50BA00499B8E /* Informer.m */; };
+		7FFC7F670D7E514000499B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C1672FE841209C02AAC07 /* Foundation.framework */; };
+		8D202CEA0486D31800D8A456 /* Secrets_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* Secrets_Prefix.pch */; };
+		8D202CEB0486D31800D8A456 /* SecretsPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F506C03C013D9D7901CA16C8 /* SecretsPref.h */; };
+		8D202CF10486D31800D8A456 /* SecretsPref.m in Sources */ = {isa = PBXBuildFile; fileRef = F506C03D013D9D7901CA16C8 /* SecretsPref.m */; };
+		8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
+		9946DA98108BA9A2007D41CD /* Secrets.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4919A0D7A948B00DD7588 /* Secrets.icns */; };
+		9946DA99108BA9A2007D41CD /* Secrets-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAA8C690D753E1C00F81F30 /* Secrets-small.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCFA20370C41700C91783 /* Secrets_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secrets_Prefix.pch; sourceTree = "<group>"; };
+		7F1972AC0D74201D00F580DC /* NSGeometry_BLTRExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSGeometry_BLTRExtensions.h; sourceTree = "<group>"; };
+		7F1972AD0D74201D00F580DC /* NSGeometry_BLTRExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSGeometry_BLTRExtensions.m; sourceTree = "<group>"; };
+		7F1972AE0D74201D00F580DC /* NSImage_BLTRExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSImage_BLTRExtensions.h; sourceTree = "<group>"; };
+		7F1972AF0D74201D00F580DC /* NSImage_BLTRExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSImage_BLTRExtensions.m; sourceTree = "<group>"; };
+		7F1972B00D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSortDescriptor+BLTRExtensions.h"; sourceTree = "<group>"; };
+		7F1972B10D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSortDescriptor+BLTRExtensions.m"; sourceTree = "<group>"; };
+		7F1C40B40E1C6F4800AA2052 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		7F704BA20D6EAD5C00879138 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SecretsPref.xib; sourceTree = "<group>"; };
+		7FA39DFC106745A8001ED884 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+		7FAA8C690D753E1C00F81F30 /* Secrets-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Secrets-small.png"; sourceTree = "<group>"; };
+		7FD490F10D7A865000DD7588 /* Application.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Application.png; sourceTree = "<group>"; };
+		7FD4919A0D7A948B00DD7588 /* Secrets.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Secrets.icns; sourceTree = "<group>"; };
+		7FEB02530D7D22D700F4D367 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		7FFC7F3C0D7E4FEF00499B8E /* Informer.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Informer.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FFC7F440D7E50BA00499B8E /* dyld-interposing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dyld-interposing.h"; sourceTree = "<group>"; };
+		7FFC7F450D7E50BA00499B8E /* Informer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Informer.m; sourceTree = "<group>"; };
+		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D202CF80486D31800D8A456 /* Secrets.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Secrets.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D3C498106719F7001D475D /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
+		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		F506C03C013D9D7901CA16C8 /* SecretsPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecretsPref.h; sourceTree = "<group>"; };
+		F506C03D013D9D7901CA16C8 /* SecretsPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecretsPref.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FFC7F3A0D7E4FEF00499B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFC7F670D7E514000499B8E /* Foundation.framework in Frameworks */,
+				7FA39DFD106745A8001ED884 /* libobjc.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D202CF20486D31800D8A456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */,
+				8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */,
+				7FEB02540D7D22D700F4D367 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				F506C03C013D9D7901CA16C8 /* SecretsPref.h */,
+				F506C03D013D9D7901CA16C8 /* SecretsPref.m */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				7FFC7F430D7E50BA00499B8E /* Informer */,
+				32DBCFA10370C40200C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				7FA39DFC106745A8001ED884 /* libobjc.dylib */,
+			);
+			name = Secrets;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F1C40B40E1C6F4800AA2052 /* Secrets.plist */,
+				7FD490F10D7A865000DD7588 /* Application.png */,
+				8D202CF70486D31800D8A456 /* Info.plist */,
+				99D3C498106719F7001D475D /* TODO.txt */,
+				7FAA8C690D753E1C00F81F30 /* Secrets-small.png */,
+				7FD4919A0D7A948B00DD7588 /* Secrets.icns */,
+				7F704BA10D6EAD5C00879138 /* SecretsPref.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F1972AC0D74201D00F580DC /* NSGeometry_BLTRExtensions.h */,
+				7F1972AD0D74201D00F580DC /* NSGeometry_BLTRExtensions.m */,
+				7F1972AE0D74201D00F580DC /* NSImage_BLTRExtensions.h */,
+				7F1972AF0D74201D00F580DC /* NSImage_BLTRExtensions.m */,
+				7F1972B00D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.h */,
+				7F1972B10D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FEB02530D7D22D700F4D367 /* Carbon.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				F506C035013D953901CA16C8 /* PreferencePanes.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D202CF80486D31800D8A456 /* Secrets.prefPane */,
+				7FFC7F3C0D7E4FEF00499B8E /* Informer.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DBCFA10370C40200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCFA20370C41700C91783 /* Secrets_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		7FFC7F430D7E50BA00499B8E /* Informer */ = {
+			isa = PBXGroup;
+			children = (
+				7FFC7F440D7E50BA00499B8E /* dyld-interposing.h */,
+				7FFC7F450D7E50BA00499B8E /* Informer.m */,
+			);
+			path = Informer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7FFC7F380D7E4FEF00499B8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D202CE90486D31800D8A456 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CEA0486D31800D8A456 /* Secrets_Prefix.pch in Headers */,
+				8D202CEB0486D31800D8A456 /* SecretsPref.h in Headers */,
+				7F1972B40D74201D00F580DC /* NSGeometry_BLTRExtensions.h in Headers */,
+				7F1972B60D74201D00F580DC /* NSImage_BLTRExtensions.h in Headers */,
+				7F1972B80D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7FFC7F3B0D7E4FEF00499B8E /* Informer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FFC7F400D7E503600499B8E /* Build configuration list for PBXNativeTarget "Informer" */;
+			buildPhases = (
+				7FFC7F380D7E4FEF00499B8E /* Headers */,
+				7FFC7F390D7E4FEF00499B8E /* Sources */,
+				7FFC7F3A0D7E4FEF00499B8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Informer;
+			productName = Informer;
+			productReference = 7FFC7F3C0D7E4FEF00499B8E /* Informer.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		8D202CE80486D31800D8A456 /* Secrets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "Secrets" */;
+			buildPhases = (
+				8D202CE90486D31800D8A456 /* Headers */,
+				8D202CEC0486D31800D8A456 /* Resources */,
+				8D202CF00486D31800D8A456 /* Sources */,
+				8D202CF20486D31800D8A456 /* Frameworks */,
+				8D202CF50486D31800D8A456 /* Rez */,
+				7FD491FD0D7A951600DD7588 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Secrets;
+			productInstallPath = "$(HOME)/Library/PreferencePanes";
+			productName = Secrets;
+			productReference = 8D202CF80486D31800D8A456 /* Secrets.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "Secrets" */;
+			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Secrets */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D202CE80486D31800D8A456 /* Secrets */,
+				7FFC7F3B0D7E4FEF00499B8E /* Informer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D202CEC0486D31800D8A456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F704BA30D6EAD5C00879138 /* SecretsPref.xib in Resources */,
+				7FD490F20D7A865000DD7588 /* Application.png in Resources */,
+				7F1C40B50E1C6F4800AA2052 /* Secrets.plist in Resources */,
+				9946DA98108BA9A2007D41CD /* Secrets.icns in Resources */,
+				9946DA99108BA9A2007D41CD /* Secrets-small.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D202CF50486D31800D8A456 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FD491FD0D7A951600DD7588 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ln -sf $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME ~/Library/PreferencePanes/$FULL_PRODUCT_NAME\nexit 0;\ncodesign -f -s Blacktree,\\ Inc. $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\ncodesign -v $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME;\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FFC7F390D7E4FEF00499B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFC7F650D7E512B00499B8E /* Informer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D202CF00486D31800D8A456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF10486D31800D8A456 /* SecretsPref.m in Sources */,
+				7F1972B50D74201D00F580DC /* NSGeometry_BLTRExtensions.m in Sources */,
+				7F1972B70D74201D00F580DC /* NSImage_BLTRExtensions.m in Sources */,
+				7F1972B90D74201D00F580DC /* NSSortDescriptor+BLTRExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F704BA10D6EAD5C00879138 /* SecretsPref.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F704BA20D6EAD5C00879138 /* English */,
+			);
+			name = SecretsPref.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBD214908BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Secrets_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = Secrets;
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DBD214A08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Secrets_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = Secrets;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+		1DBD214D08BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				VALID_ARCHS = "i386 ppc x86_64";
+			};
+			name = Debug;
+		};
+		1DBD214E08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+		7FFC7F3D0D7E4FF100499B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Informer;
+			};
+			name = Debug;
+		};
+		7FFC7F3E0D7E4FF100499B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Informer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "Secrets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214908BA80EA00186707 /* Debug */,
+				1DBD214A08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "Secrets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214D08BA80EA00186707 /* Debug */,
+				1DBD214E08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FFC7F400D7E503600499B8E /* Build configuration list for PBXNativeTarget "Informer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FFC7F3D0D7E4FF100499B8E /* Debug */,
+				7FFC7F3E0D7E4FF100499B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
